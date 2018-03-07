@@ -9,32 +9,23 @@
     <link rel="stylesheet" href="/Users/user/Dev-Point/Week5/Flash/style.css"/>
 </head>
 <body>
-  <div id="title">
+  <div id="header">
     <h1>Flash Cards</h1>
   </div>
 
-  
+  <form id="form1A"> 
+    <h4>Title</h4>
+      <input type="text" name="title" id="title"/>
+    <h4>Description</h4>
+      <input type="text" name="description" id="description"/>
+      <input type="submit" value="submit"/>
+  </form>
 
-
-<div class="row">
-  <div class="col s12 m3">
-    <div class="card blue-grey darken-1">
-      <div class="card-content">
-        <div id="card1A">          <!--CARD 1-->
-          <button id="toggle1">Flip</button>
-          <form id="form1A"> 
-            <h4>Title</h4>
-              <input type="text" name="title" id="title"/>
-            <h4>Description</h4>
-              <input type="text" name="description" id="description"/>
-              <input type="submit" value="submit"/>
-          </form>
-        </div>
-      </div>
+  <div class="row">
+    <div class="cards-container">
+      <div id="flashcards"></div>
     </div>
   </div>
-</div>
-<hr />
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
