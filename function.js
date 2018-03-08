@@ -3,7 +3,7 @@ let descriptions = []
 let index = 0;
 
 const CreateCard = (title, description) => {
-  i++;
+  index++;
   titles[index] = title;
   answers[index] = description;
   card = `${title}`
